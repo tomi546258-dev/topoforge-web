@@ -1,39 +1,31 @@
-TOPOFORGE WEBSITE v0.6
+TOPOFORGE WEBSITE v0.7
 =======================
 
-New in v0.6
------------
-- GoatCounter analytics enabled for account: topoforge
-- Discreet visible visitor counter in the footer (home-page path /topoforge-web/)
-- Contact email shown publicly: tomi546258@gmail.com
-- Added "Where TopoForge may help" with five candidate application areas:
-  1. Multi-sensor systems
-  2. Image and thermal-image processing
-  3. Industrial multi-channel measurement
-  4. Robotics and distributed sensing
-  5. Event-driven / sparse-activity systems
-- GoatCounter also tracks the thanks.html page.
+Change from v0.6
+----------------
+- Removed the GoatCounter embedded visitor-counter rendering that could show
+  an Error 403 / embedded page in the footer.
+- Visitor count is now read from GoatCounter's public .json counter endpoint.
+- Footer displays only plain text, for example:
+    Visitors: 1
+- GoatCounter count.js remains in place for normal page tracking.
+- Contact email, use-case section, FormSubmit request flow, and thanks page
+  are unchanged.
 
-IMPORTANT GOATCOUNTER SETTING
------------------------------
-The tracking script works immediately, but to display the public count in the footer,
-open your GoatCounter settings and enable:
-
+GoatCounter setting required
+----------------------------
+Keep this enabled:
   Allow adding visitor counts on your website
 
-This option is disabled by default.
-
-GITHUB UPLOAD
--------------
+UPLOAD TO GITHUB
+----------------
 Replace/upload these files in the repository root:
-
   index.html
   styles.css
-  thanks.html
 
-The assets folder can remain unchanged.
+thanks.html does not need to change for this visitor-counter fix.
 
-Live site:
+Then wait for GitHub Pages to redeploy and reload:
   https://tomi546258-dev.github.io/topoforge-web/
 
-After GitHub Pages redeploys, use Ctrl+F5 and look at the footer.
+Use Ctrl+F5 if the old version is cached.

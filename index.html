@@ -675,24 +675,28 @@
       </div>
     </div>
   </footer>
-  <script>
+    <script>
     (function () {
-      var attempts = 0;
-      var timer = setInterval(function () {
-        attempts += 1;
-        if (window.goatcounter && window.goatcounter.visit_count) {
-          clearInterval(timer);
-          var target = document.querySelector('#visitor-count');
-          if (target) target.textContent = '';
-          window.goatcounter.visit_count({
-            append: '#visitor-count',
-            path: '/topoforge-web/',
-            no_branding: true
-          });
-        } else if (attempts > 80) {
-          clearInterval(timer);
-        }
-      }, 100);
+      const target = document.getElementById('visitor-count');
+      if (!target) return;
+
+      const path = '/topoforge-web/';
+      const endpoint =
+        'https://topoforge.goatcounter.com/counter/' +
+        encodeURIComponent(path) +
+        '.json';
+
+      fetch(endpoint, { cache: 'no-store' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('GoatCounter HTTP ' + response.status);
+          return response.json();
+        })
+        .then(function (data) {
+          target.textContent = data && data.count ? data.count : '—';
+        })
+        .catch(function () {
+          target.textContent = '—';
+        });
     })();
   </script>
   <script data-goatcounter="https://topoforge.goatcounter.com/count"

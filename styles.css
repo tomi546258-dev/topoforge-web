@@ -409,3 +409,10 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
   .footer-copy{align-items:flex-start}
   .footer-meta{justify-content:flex-start}
 }
+
+/* v0.7 — GoatCounter visitor count is now rendered as plain text from JSON. */
+#visitor-count{
+  display:inline;
+  min-width:0;
+  font-variant-numeric:tabular-nums;
+}
