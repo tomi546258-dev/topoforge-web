@@ -1,16 +1,19 @@
-TOPOFORGE WEBSITE v0.4
+TOPOFORGE WEBSITE v0.5
 =======================
 
-Fixes:
-- Correct GitHub Pages source URL sent to FormSubmit.
-- Redirect after submit to /topoforge-web/thanks.html.
-- Added branded thanks.html.
-- Customer email field explicitly asks for the customer's own email address.
+Change:
+- Removed the hidden FormSubmit _honey field completely.
+- The request destination remains: tomi546258@gmail.com
+- The visitor must enter THEIR OWN email address in the form.
+- Successful submissions redirect to:
+  https://tomi546258-dev.github.io/topoforge-web/thanks.html
 
-Upload/replace in the GitHub repository root:
+UPLOAD TO GITHUB
+----------------
+Replace/upload these files in the repository root:
+
   index.html
   styles.css
   thanks.html
 
-Provider destination email: tomi546258@gmail.com
-Customer form email: the visitor enters THEIR OWN email address.
+Then wait for GitHub Pages to redeploy and test again with a different customer email address.

@@ -235,7 +235,6 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
 }
 .submit-btn{border:0;cursor:pointer;min-width:235px}
 .form-footnote{color:#71868e;font-size:12px;margin:12px 0 0}
-.honey{position:absolute!important;left:-99999px!important;width:1px!important;height:1px!important;opacity:0!important}
 
 @media(max-width:620px){
   .form-grid.two,.check-grid{grid-template-columns:1fr}
