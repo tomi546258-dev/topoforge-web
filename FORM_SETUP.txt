@@ -1,0 +1,31 @@
+TOPOFORGE WEBSITE v0.3 — FORM SETUP
+====================================
+
+The online Evaluation Request form is configured to send requests to:
+
+    tomi546258@gmail.com
+
+FORM FLOW
+---------
+1. Publish the website.
+2. Submit one test request yourself.
+3. FormSubmit should send an activation email to the address above.
+4. Confirm/activate the form from that email.
+5. Submit a second test request.
+
+After activation:
+- TopoForge requests arrive at tomi546258@gmail.com;
+- the visitor receives the automatic acknowledgement;
+- the acknowledgement says the evaluation package will be sent by email within
+  1–2 business days;
+- the protected customer ZIP is prepared manually and returned by email.
+
+IMPORTANT
+---------
+The first live submission must be used to activate the FormSubmit endpoint.
+
+The public form explicitly asks users not to submit passwords, credentials,
+proprietary source code or unnecessary secrets.
+
+For a later production release, this third-party form endpoint can be replaced
+with a self-hosted backend without changing the visible form design.

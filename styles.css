@@ -341,3 +341,11 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
   .free-preview-callout{display:block;padding:23px}
   .free-preview-callout .btn{width:100%;margin-top:20px}
 }
+
+.field-help{
+  display:block;
+  margin-top:7px;
+  color:#6f858d;
+  font-size:11px;
+  line-height:1.45;
+}
