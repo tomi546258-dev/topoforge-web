@@ -19,6 +19,7 @@
       <nav class="nav-links" aria-label="Primary">
         <a href="#technology">Technology</a>
         <a href="#results">Results</a>
+        <a href="#use-cases">Use cases</a>
         <a href="#workflow">Workflow</a>
         <a href="#roadmap">Roadmap</a>
         <a href="#support">Support</a>
@@ -208,6 +209,53 @@
       </div>
     </section>
 
+    <section class="section use-cases-section" id="use-cases">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">WHERE TOPOFORGE MAY HELP</div>
+          <h2>Good candidates are structured, repeated and connection-heavy.</h2>
+          <p>
+            TopoForge is aimed at FPGA designs where many similar processing elements exchange
+            mostly local, structured or sparse information. These five areas are useful starting
+            points for an evaluation.
+          </p>
+        </div>
+
+        <div class="use-case-grid">
+          <article class="use-case-card">
+            <span class="use-case-no">01</span>
+            <h3>Multi-sensor systems</h3>
+            <p>Sensor arrays and condition-monitoring systems with many similar channels and mostly local data exchange.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">02</span>
+            <h3>Image &amp; thermal-image processing</h3>
+            <p>Local pixel or region processing where neighboring processing elements dominate the useful communication pattern.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">03</span>
+            <h3>Industrial multi-channel measurement</h3>
+            <p>Parallel measurement and instrumentation architectures whose channels can be grouped into local processing neighborhoods.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">04</span>
+            <h3>Robotics &amp; distributed sensing</h3>
+            <p>Distributed sensing and control fabrics with repeated nodes, local interactions and selective long-range communication.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">05</span>
+            <h3>Event-driven &amp; sparse-activity systems</h3>
+            <p>Fault detection, alarms and event-driven processing where only part of the network is active or relevant at a given time.</p>
+          </article>
+        </div>
+
+        <p class="fine-print use-case-note">
+          These are candidate application classes, not guaranteed savings. The benefit depends on the
+          actual connectivity, data path, timing constraints and FPGA implementation.
+        </p>
+      </div>
+    </section>
+
     <section class="section" id="workflow">
       <div class="wrap">
         <div class="section-heading">
@@ -359,6 +407,10 @@
             and I will review the request and send the evaluation package by email
             within 1–2 business days.
           </p>
+        </div>
+
+        <div class="contact-line">
+          Questions before submitting? Email <a href="mailto:tomi546258@gmail.com">tomi546258@gmail.com</a>
         </div>
 
         <form
@@ -614,9 +666,36 @@
         <span>TopoForge</span>
       </div>
       <div class="footer-copy">
-        Structure-aware FPGA interconnect optimization · Technology Preview 0.1
+        <span>Structure-aware FPGA interconnect optimization · Technology Preview 0.1</span>
+        <span class="footer-meta">
+          <a href="mailto:tomi546258@gmail.com">tomi546258@gmail.com</a>
+          <span aria-hidden="true">·</span>
+          <span>Visitors: <span id="visitor-count">—</span></span>
+        </span>
       </div>
     </div>
   </footer>
+  <script>
+    (function () {
+      var attempts = 0;
+      var timer = setInterval(function () {
+        attempts += 1;
+        if (window.goatcounter && window.goatcounter.visit_count) {
+          clearInterval(timer);
+          var target = document.querySelector('#visitor-count');
+          if (target) target.textContent = '';
+          window.goatcounter.visit_count({
+            append: '#visitor-count',
+            path: '/topoforge-web/',
+            no_branding: true
+          });
+        } else if (attempts > 80) {
+          clearInterval(timer);
+        }
+      }, 100);
+    })();
+  </script>
+  <script data-goatcounter="https://topoforge.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>

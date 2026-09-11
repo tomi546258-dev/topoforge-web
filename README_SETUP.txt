@@ -1,19 +1,39 @@
-TOPOFORGE WEBSITE v0.5
+TOPOFORGE WEBSITE v0.6
 =======================
 
-Change:
-- Removed the hidden FormSubmit _honey field completely.
-- The request destination remains: tomi546258@gmail.com
-- The visitor must enter THEIR OWN email address in the form.
-- Successful submissions redirect to:
-  https://tomi546258-dev.github.io/topoforge-web/thanks.html
+New in v0.6
+-----------
+- GoatCounter analytics enabled for account: topoforge
+- Discreet visible visitor counter in the footer (home-page path /topoforge-web/)
+- Contact email shown publicly: tomi546258@gmail.com
+- Added "Where TopoForge may help" with five candidate application areas:
+  1. Multi-sensor systems
+  2. Image and thermal-image processing
+  3. Industrial multi-channel measurement
+  4. Robotics and distributed sensing
+  5. Event-driven / sparse-activity systems
+- GoatCounter also tracks the thanks.html page.
 
-UPLOAD TO GITHUB
-----------------
+IMPORTANT GOATCOUNTER SETTING
+-----------------------------
+The tracking script works immediately, but to display the public count in the footer,
+open your GoatCounter settings and enable:
+
+  Allow adding visitor counts on your website
+
+This option is disabled by default.
+
+GITHUB UPLOAD
+-------------
 Replace/upload these files in the repository root:
 
   index.html
   styles.css
   thanks.html
 
-Then wait for GitHub Pages to redeploy and test again with a different customer email address.
+The assets folder can remain unchanged.
+
+Live site:
+  https://tomi546258-dev.github.io/topoforge-web/
+
+After GitHub Pages redeploys, use Ctrl+F5 and look at the footer.
