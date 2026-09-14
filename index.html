@@ -3,8 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="TopoForge — structure-aware FPGA interconnect optimization. Reduce interconnect cost, preserve useful structure, and fit more processing into the same FPGA.">
-  <title>TopoForge — Structure-Aware FPGA Interconnect Optimization</title>
+  <meta name="description" content="Choose N=2–39 and receive a protected, integration-ready TopoForge sparse FPGA evaluation core for Xilinx Spartan-6 and ISE 14.7.">
+  <meta property="og:title" content="TopoForge — N-Specific Sparse FPGA Cores">
+  <meta property="og:description" content="Choose N=2–39. Receive a protected NGC core, wrapper, example project and verified build information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomi546258-dev.github.io/topoforge-web/">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://tomi546258-dev.github.io/topoforge-web/">
+  <title>TopoForge — N-Specific Sparse FPGA Cores</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,7 +30,7 @@
         <a href="#roadmap">Roadmap</a>
         <a href="#support">Support</a>
       </nav>
-      <a class="btn btn-small btn-outline" href="#request">Request Evaluation</a>
+      <a class="btn btn-small btn-outline" href="#request">Request My Core</a>
     </div>
   </header>
 
@@ -33,24 +39,24 @@
       <div class="hero-grid-bg" aria-hidden="true"></div>
       <div class="wrap hero-layout">
         <div class="hero-copy">
-          <div class="eyebrow">FPGA INTERCONNECT TECHNOLOGY PREVIEW</div>
-          <h1>Fit more processing<br>into the FPGA you already have.</h1>
+          <div class="eyebrow">N-SPECIFIC SPARSE FPGA CORE · TECHNOLOGY PREVIEW</div>
+          <h1>Choose N. Receive a protected FPGA core.</h1>
           <p class="hero-lead">
-            TopoForge reduces structurally redundant interconnect in processing-element networks
-            while preserving required connectivity and application-relevant structure.
+            Select any processing-element count from N=2 to 39. TopoForge chooses a balanced,
+            Menger-derived sparse topology and delivers an integration-ready protected NGC package.
           </p>
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#request">Request Evaluation Build</a>
-            <a class="btn btn-ghost" href="#workflow">See how it works</a>
+            <a class="btn btn-primary" href="#request">Request My Evaluation Core</a>
+            <a class="btn btn-ghost" href="#results">See verified results</a>
           </div>
           <div class="hero-note">
             <span class="dot"></span>
-            Technology Preview 0.1 · Protected customer builds · Manual evaluation workflow
+            Free Technology Preview · XC6SLX9 / ISE 14.7 · Delivered within 1–2 business days
           </div>
         </div>
 
         <div class="network-card" aria-label="Illustrative sparse network diagram">
-          <div class="network-label">STRUCTURE-AWARE FABRIC</div>
+          <div class="network-label">MENGER-DERIVED SPARSE FABRIC</div>
           <svg viewBox="0 0 520 380" role="img" aria-label="Dense and sparse network comparison">
             <defs>
               <linearGradient id="g" x1="0" x2="1">
@@ -115,10 +121,11 @@
     </section>
 
     <section class="strip">
-      <div class="wrap strip-grid">
-        <div><strong>Protected IP delivery</strong><span>.ngc customer builds</span></div>
-        <div><strong>Physically validated</strong><span>Spartan-6 reference flow</span></div>
-        <div><strong>No optimizer source exposed</strong><span>manual build preparation</span></div>
+      <div class="wrap strip-grid" aria-label="TopoForge evaluation proof">
+        <div class="proof-primary"><strong>38/38 cores synthesized</strong><span>N-specific protected builds</span></div>
+        <div><strong>N=2–39 ready</strong><span>BALANCED topology profile</span></div>
+        <div><strong>Protected IP delivery</strong><span>NGC core + public wrapper</span></div>
+        <div><strong>Fixed reference target</strong><span>XC6SLX9 · Xilinx ISE 14.7</span></div>
       </div>
     </section>
 
@@ -149,8 +156,8 @@
           <div class="eyebrow">VALIDATED REFERENCE RESULT</div>
           <h2>Same FPGA. Same PE count. Less interconnect.</h2>
           <p>
-            Grid40 and Sparse40 were implemented with the same pipeline, clock, stimulus and device.
-            Only the connectivity changed.
+            The 40-PE grid baseline and the Menger-derived Sparse40 core were implemented with the
+            same pipeline, clock, stimulus and device. Only the connectivity changed.
           </p>
         </div>
 
@@ -295,7 +302,7 @@
           <h2>A customer package, not the proprietary generator.</h2>
         </div>
         <div class="code-card">
-<pre>TF-CUST-xxxxxx/
+<pre>TF-EVAL-xxxxxx_Nxx_BALANCED/
 ├── src/
 │   ├── topoforge_core.ngc
 │   ├── topoforge_wrapper.vhd
@@ -367,7 +374,7 @@
               larger commercial versions arrive.
             </p>
           </div>
-          <a class="btn btn-primary" href="#request">Request a free evaluation build</a>
+          <a class="btn btn-primary" href="#request">Request My Evaluation Core</a>
         </div>
 
         <p class="fine-print roadmap-disclaimer">
@@ -381,18 +388,18 @@
       <div class="wrap support-card">
         <div>
           <div class="eyebrow">TECHNOLOGY PREVIEW 0.1</div>
-          <h2>Current validated profile</h2>
+          <h2>Current evaluation profile</h2>
         </div>
         <div class="profile-grid">
-          <div><span>Vendor / family</span><strong>Xilinx Spartan-6</strong></div>
-          <div><span>Device</span><strong>XC6SLX9-2-TQG144</strong></div>
+          <div><span>Device</span><strong>Spartan-6 XC6SLX9-2-TQG144</strong></div>
           <div><span>Toolchain</span><strong>ISE 14.7</strong></div>
-          <div><span>Reference network</span><strong>40 PE × 8 bit</strong></div>
+          <div><span>Available PE count</span><strong>N=2–39</strong></div>
+          <div><span>PE data width</span><strong>8 bit</strong></div>
           <div><span>Reference clock</span><strong>50 MHz</strong></div>
           <div><span>Public interface</span><strong>TF-IF-0.3</strong></div>
         </div>
         <p class="support-note">
-          Requests outside this profile may be considered experimental and can require additional validation.
+          Other devices, data widths, clocks or topology profiles are experimental and require additional validation.
         </p>
       </div>
     </section>
@@ -400,12 +407,12 @@
     <section class="section request-section" id="request">
       <div class="wrap">
         <div class="section-heading">
-          <div class="eyebrow">REQUEST AN EVALUATION BUILD</div>
-          <h2>Tell me about your FPGA network.</h2>
+          <div class="eyebrow">GET AN N-SPECIFIC EVALUATION CORE</div>
+          <h2>Choose your N. Start evaluating.</h2>
           <p>
-            Submit the form below. You will receive an automatic confirmation email,
-            and I will review the request and send the evaluation package by email
-            within 1–2 business days.
+            Choose any N from 2 to 39 for the current BALANCED profile. You will receive a protected
+            NGC core, public wrapper, example project and verified build information by email within
+            1–2 business days.
           </p>
         </div>
 
@@ -510,15 +517,16 @@
             <div class="form-section-title">
               <span>03</span>
               <div>
-                <h3>Processing network</h3>
-                <p>Describe the network at a structural level. Do not upload proprietary source code.</p>
+                <h3>Select your core</h3>
+                <p>N is the only required topology choice for the standard BALANCED evaluation core.</p>
               </div>
             </div>
 
             <div class="form-grid two">
               <label>
-                <span>PE count *</span>
-                <input type="number" name="PE count" value="40" min="1" required>
+                <span>Processing elements (N) *</span>
+                <input type="number" name="PE count" value="32" min="2" max="39" required>
+                <small class="field-help">Available now: any whole number from 2 through 39.</small>
               </label>
 
               <label>
@@ -528,12 +536,11 @@
             </div>
 
             <label>
-              <span>Baseline topology *</span>
+              <span>Existing baseline topology (optional)</span>
               <input
                 type="text"
                 name="Baseline topology"
-                placeholder="Example: 4 x 5 x 2 nearest-neighbour grid"
-                required
+                placeholder="Leave blank for the standard TopoForge BALANCED topology"
               >
             </label>
 
@@ -565,12 +572,11 @@
             </label>
 
             <label>
-              <span>What does the network do? *</span>
+              <span>What does the network do? (optional)</span>
               <textarea
                 name="Network description"
                 rows="5"
-                placeholder="Short functional description of the PE network."
-                required
+                placeholder="A short application description helps us understand your evaluation."
               ></textarea>
             </label>
           </div>
@@ -646,7 +652,7 @@
             </label>
 
             <button class="btn btn-primary btn-large submit-btn" type="submit">
-              Send Evaluation Request
+              Request My Evaluation Core
             </button>
 
             <p class="form-footnote">
@@ -669,11 +675,10 @@
         <span>Structure-aware FPGA interconnect optimization · Technology Preview 0.1</span>
         <span class="footer-meta">
           <a href="mailto:tomi546258@gmail.com">tomi546258@gmail.com</a>
-          <span aria-hidden="true">·</span>
-          <span>Visitors: <span id="visitor-count">—</span></span>
         </span>
       </div>
     </div>
+    <span id="visitor-count" class="visitor-corner" aria-label="Site visit count">—</span>
   </footer>
     <script>
     (function () {
