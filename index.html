@@ -685,11 +685,7 @@
       const target = document.getElementById('visitor-count');
       if (!target) return;
 
-      const path = '/';
-      const endpoint =
-        'https://topoforge.goatcounter.com/counter/' +
-        encodeURIComponent(path) +
-        '.json';
+      const endpoint = 'https://topoforge.goatcounter.com/counter/TOTAL.json';
 
       fetch(endpoint, { cache: 'no-store' })
         .then(function (response) {

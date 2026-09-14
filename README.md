@@ -12,4 +12,4 @@ Current public evaluation profile:
 - BALANCED topology profile;
 - protected NGC delivery with public integration files.
 
-Website revision: v0.8.2.
+Website revision: v0.8.3.

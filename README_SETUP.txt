@@ -1,11 +1,12 @@
-TOPOFORGE WEBSITE v0.8.2
+TOPOFORGE WEBSITE v0.8.3
 =======================
 
-Changes from v0.8.1
+Changes from v0.8.2
 ----------------
-- Aligned all public product wording around TopoForge structure-aware sparse
-  FPGA cores.
-- The N=2–40 range, validation statements and request workflow are unchanged.
+- The discreet footer number now uses GoatCounter's TOTAL counter instead of
+  a path-specific counter. This preserves the total across old and new page
+  paths and avoids a missing-path dash.
+- Public product wording and the N=2–40 evaluation range are unchanged.
 
 GoatCounter setting required
 ----------------------------
@@ -27,4 +28,5 @@ thanks.html does not need to change for this revision.
 Then wait for GitHub Pages to redeploy and reload:
   https://tomi546258-dev.github.io/
 
-Use Ctrl+F5 if the old version is cached.
+In Microsoft Edge use Ctrl+Shift+R for a hard reload. The public GoatCounter
+result may be cached by the service for up to four hours.
