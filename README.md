@@ -1,7 +1,7 @@
 # TopoForge website
 
 Technology Preview landing page and evaluation-request form for N-specific,
-Menger-derived sparse FPGA cores.
+structure-aware sparse FPGA cores.
 
 Current public evaluation profile:
 
@@ -12,4 +12,4 @@ Current public evaluation profile:
 - BALANCED topology profile;
 - protected NGC delivery with public integration files.
 
-Website revision: v0.8.1.
+Website revision: v0.8.2.

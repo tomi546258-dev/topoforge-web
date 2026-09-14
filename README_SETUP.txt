@@ -1,13 +1,11 @@
-TOPOFORGE WEBSITE v0.8.1
+TOPOFORGE WEBSITE v0.8.2
 =======================
 
-Changes from v0.8
+Changes from v0.8.1
 ----------------
-- Extended the customer-facing evaluation range from N=2–39 to N=2–40.
-- Kept the validation statement precise: 38/38 automated N=2–39 cores
-  synthesized successfully, plus the physically validated N=40 Sparse40
-  reference core.
-- Extended the request form's accepted PE-count range to N=40.
+- Aligned all public product wording around TopoForge structure-aware sparse
+  FPGA cores.
+- The N=2–40 range, validation statements and request workflow are unchanged.
 
 GoatCounter setting required
 ----------------------------
