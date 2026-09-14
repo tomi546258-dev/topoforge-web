@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tomi546258-dev.github.io/topoforge-web/sitemap.xml
+Sitemap: https://tomi546258-dev.github.io/sitemap.xml

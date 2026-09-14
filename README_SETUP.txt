@@ -1,18 +1,13 @@
-TOPOFORGE WEBSITE v0.8
+TOPOFORGE WEBSITE v0.8.1
 =======================
 
-Changes from v0.7
+Changes from v0.8
 ----------------
-- Replaced the generic CTA with "Request My Evaluation Core".
-- Added the N=2–39 BALANCED evaluation offer to the hero and request section.
-- Added visible proof that 38/38 N-specific protected cores synthesized.
-- Clarified that Sparse40 is the Menger-derived TopoForge core and Grid40 is
-  the reference baseline.
-- Changed the public visitor counter to a discreet bare number in the lower-
-  right footer corner.
-- Limited the PE-count field to N=2–39 and made the customer's existing
-  topology description optional for the standard BALANCED core.
-- Improved the four-item proof strip and mobile wrapping.
+- Extended the customer-facing evaluation range from N=2–39 to N=2–40.
+- Kept the validation statement precise: 38/38 automated N=2–39 cores
+  synthesized successfully, plus the physically validated N=40 Sparse40
+  reference core.
+- Extended the request form's accepted PE-count range to N=40.
 
 GoatCounter setting required
 ----------------------------
@@ -32,6 +27,6 @@ Replace/upload these files in the repository root:
 thanks.html does not need to change for this revision.
 
 Then wait for GitHub Pages to redeploy and reload:
-  https://tomi546258-dev.github.io/topoforge-web/
+  https://tomi546258-dev.github.io/
 
 Use Ctrl+F5 if the old version is cached.

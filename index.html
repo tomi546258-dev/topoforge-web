@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Choose N=2–39 and receive a protected, integration-ready TopoForge sparse FPGA evaluation core for Xilinx Spartan-6 and ISE 14.7.">
+  <meta name="description" content="Choose N=2–40 and receive a protected, integration-ready TopoForge sparse FPGA evaluation core for Xilinx Spartan-6 and ISE 14.7.">
   <meta property="og:title" content="TopoForge — N-Specific Sparse FPGA Cores">
-  <meta property="og:description" content="Choose N=2–39. Receive a protected NGC core, wrapper, example project and verified build information.">
+  <meta property="og:description" content="Choose N=2–40. Receive a protected NGC core, wrapper, example project and verified build information.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://tomi546258-dev.github.io/topoforge-web/">
+  <meta property="og:url" content="https://tomi546258-dev.github.io/">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://tomi546258-dev.github.io/topoforge-web/">
+  <link rel="canonical" href="https://tomi546258-dev.github.io/">
   <title>TopoForge — N-Specific Sparse FPGA Cores</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -42,7 +42,7 @@
           <div class="eyebrow">N-SPECIFIC SPARSE FPGA CORE · TECHNOLOGY PREVIEW</div>
           <h1>Choose N. Receive a protected FPGA core.</h1>
           <p class="hero-lead">
-            Select any processing-element count from N=2 to 39. TopoForge chooses a balanced,
+            Select any processing-element count from N=2 to 40. TopoForge chooses a balanced,
             Menger-derived sparse topology and delivers an integration-ready protected NGC package.
           </p>
           <div class="hero-actions">
@@ -122,10 +122,10 @@
 
     <section class="strip">
       <div class="wrap strip-grid" aria-label="TopoForge evaluation proof">
-        <div class="proof-primary"><strong>38/38 cores synthesized</strong><span>N-specific protected builds</span></div>
-        <div><strong>N=2–39 ready</strong><span>BALANCED topology profile</span></div>
+        <div class="proof-primary"><strong>38/38 automated cores</strong><span>N=2–39 synthesized successfully</span></div>
+        <div><strong>N=40 reference core</strong><span>Physically validated Sparse40 build</span></div>
+        <div><strong>N=2–40 available</strong><span>BALANCED evaluation profile</span></div>
         <div><strong>Protected IP delivery</strong><span>NGC core + public wrapper</span></div>
-        <div><strong>Fixed reference target</strong><span>XC6SLX9 · Xilinx ISE 14.7</span></div>
       </div>
     </section>
 
@@ -393,7 +393,7 @@
         <div class="profile-grid">
           <div><span>Device</span><strong>Spartan-6 XC6SLX9-2-TQG144</strong></div>
           <div><span>Toolchain</span><strong>ISE 14.7</strong></div>
-          <div><span>Available PE count</span><strong>N=2–39</strong></div>
+          <div><span>Available PE count</span><strong>N=2–40</strong></div>
           <div><span>PE data width</span><strong>8 bit</strong></div>
           <div><span>Reference clock</span><strong>50 MHz</strong></div>
           <div><span>Public interface</span><strong>TF-IF-0.3</strong></div>
@@ -410,7 +410,7 @@
           <div class="eyebrow">GET AN N-SPECIFIC EVALUATION CORE</div>
           <h2>Choose your N. Start evaluating.</h2>
           <p>
-            Choose any N from 2 to 39 for the current BALANCED profile. You will receive a protected
+            Choose any N from 2 to 40 for the current BALANCED profile. You will receive a protected
             NGC core, public wrapper, example project and verified build information by email within
             1–2 business days.
           </p>
@@ -425,8 +425,8 @@
           action="https://formsubmit.co/tomi546258@gmail.com"
           method="POST"
         >
-          <input type="hidden" name="_url" value="https://tomi546258-dev.github.io/topoforge-web/">
-          <input type="hidden" name="_next" value="https://tomi546258-dev.github.io/topoforge-web/thanks.html">
+          <input type="hidden" name="_url" value="https://tomi546258-dev.github.io/">
+          <input type="hidden" name="_next" value="https://tomi546258-dev.github.io/thanks.html">
           <input type="hidden" name="_subject" value="New TopoForge Evaluation Request">
           <input type="hidden" name="_template" value="table">
           <input
@@ -525,8 +525,8 @@
             <div class="form-grid two">
               <label>
                 <span>Processing elements (N) *</span>
-                <input type="number" name="PE count" value="32" min="2" max="39" required>
-                <small class="field-help">Available now: any whole number from 2 through 39.</small>
+                <input type="number" name="PE count" value="32" min="2" max="40" required>
+                <small class="field-help">Available now: any whole number from 2 through 40.</small>
               </label>
 
               <label>
@@ -685,7 +685,7 @@
       const target = document.getElementById('visitor-count');
       if (!target) return;
 
-      const path = '/topoforge-web/';
+      const path = '/';
       const endpoint =
         'https://topoforge.goatcounter.com/counter/' +
         encodeURIComponent(path) +

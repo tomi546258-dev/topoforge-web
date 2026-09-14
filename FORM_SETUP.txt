@@ -1,4 +1,4 @@
-TOPOFORGE WEBSITE v0.8 — FORM SETUP
+TOPOFORGE WEBSITE v0.8.1 — FORM SETUP
 ====================================
 
 The online Evaluation Request form is configured to send requests to:
@@ -17,7 +17,7 @@ After activation:
 - TopoForge requests arrive at tomi546258@gmail.com;
 - the visitor receives the automatic acknowledgement;
 - the standard evaluation request accepts any whole-number PE count from
-  N=2 through N=39;
+  N=2 through N=40;
 - an existing customer topology description is optional for the standard
   TopoForge BALANCED core;
 - the acknowledgement says the evaluation package will be sent by email within
