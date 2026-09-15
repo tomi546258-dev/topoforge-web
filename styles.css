@@ -33,6 +33,8 @@ a{color:inherit;text-decoration:none}
 }
 .nav{height:72px;display:flex;align-items:center;gap:28px}
 .brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.02em;font-size:20px}
+.brand-name{display:inline-flex;align-items:baseline;gap:7px;white-space:nowrap}
+.brand-name small{color:var(--accent);font-size:.55em;font-weight:850;letter-spacing:.12em}
 .brand-mark{position:relative;width:27px;height:27px;display:grid;grid-template-columns:repeat(3,1fr);gap:3px;transform:rotate(45deg)}
 .brand-mark i{display:block;border:1px solid rgba(142,227,255,.75);background:rgba(142,227,255,.13)}
 .brand-mark i:nth-child(2),.brand-mark i:nth-child(5){background:rgba(182,255,207,.45)}

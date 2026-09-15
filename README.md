@@ -1,4 +1,4 @@
-# TopoForge website
+# TopoForge FPGA website
 
 Technology Preview landing page and evaluation-request form for N-specific,
 structure-aware sparse FPGA cores.
@@ -12,4 +12,4 @@ Current public evaluation profile:
 - BALANCED topology profile;
 - protected NGC delivery with public integration files.
 
-Website revision: v0.8.3.
+Website revision: v0.8.4.

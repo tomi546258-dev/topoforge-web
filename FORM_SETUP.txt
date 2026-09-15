@@ -1,4 +1,4 @@
-TOPOFORGE WEBSITE v0.8.3 — FORM SETUP
+TOPOFORGE FPGA WEBSITE v0.8.4 — FORM SETUP
 ====================================
 
 The online Evaluation Request form is configured to send requests to:
@@ -14,12 +14,12 @@ FORM FLOW
 5. Submit a second test request.
 
 After activation:
-- TopoForge requests arrive at tomi546258@gmail.com;
+- TopoForge FPGA requests arrive at tomi546258@gmail.com;
 - the visitor receives the automatic acknowledgement;
 - the standard evaluation request accepts any whole-number PE count from
   N=2 through N=40;
 - an existing customer topology description is optional for the standard
-  TopoForge BALANCED core;
+  TopoForge FPGA BALANCED core;
 - the acknowledgement says the evaluation package will be sent by email within
   1–2 business days;
 - the protected customer ZIP is prepared manually and returned by email.

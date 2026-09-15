@@ -3,24 +3,37 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Choose N=2–40 and receive a protected, integration-ready TopoForge sparse FPGA evaluation core for Xilinx Spartan-6 and ISE 14.7.">
-  <meta property="og:title" content="TopoForge — N-Specific Sparse FPGA Cores">
+  <meta name="description" content="Choose N=2–40 and receive a protected, integration-ready TopoForge FPGA sparse-core evaluation package for Xilinx Spartan-6 and ISE 14.7.">
+  <meta property="og:title" content="TopoForge FPGA — N-Specific Sparse Cores">
   <meta property="og:description" content="Choose N=2–40. Receive a protected NGC core, wrapper, example project and verified build information.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tomi546258-dev.github.io/">
+  <meta property="og:site_name" content="TopoForge FPGA">
   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TopoForge FPGA — N-Specific Sparse Cores">
+  <meta name="twitter:description" content="Protected N-specific FPGA cores for Xilinx Spartan-6 and ISE 14.7.">
   <link rel="canonical" href="https://tomi546258-dev.github.io/">
-  <title>TopoForge — N-Specific Sparse FPGA Cores</title>
+  <title>TopoForge FPGA — N-Specific Sparse Cores</title>
   <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "TopoForge FPGA",
+    "description": "N-specific protected sparse FPGA cores for structure-aware interconnect optimization.",
+    "brand": {"@type": "Brand", "name": "TopoForge FPGA"},
+    "url": "https://tomi546258-dev.github.io/"
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
     <div class="wrap nav">
-      <a class="brand" href="#top" aria-label="TopoForge home">
+      <a class="brand" href="#top" aria-label="TopoForge FPGA home">
         <span class="brand-mark" aria-hidden="true">
           <i></i><i></i><i></i><i></i><i></i><i></i>
         </span>
-        <span>TopoForge</span>
+        <span class="brand-name">TopoForge <small>FPGA</small></span>
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#technology">Technology</a>
@@ -42,7 +55,7 @@
           <div class="eyebrow">N-SPECIFIC SPARSE FPGA CORE · TECHNOLOGY PREVIEW</div>
           <h1>Choose N. Receive a protected FPGA core.</h1>
           <p class="hero-lead">
-            Select any processing-element count from N=2 to 40. TopoForge chooses a balanced,
+            Select any processing-element count from N=2 to 40. TopoForge FPGA chooses a balanced,
             structure-aware sparse topology and delivers an integration-ready protected NGC package.
           </p>
           <div class="hero-actions">
@@ -56,7 +69,7 @@
         </div>
 
         <div class="network-card" aria-label="Illustrative sparse network diagram">
-          <div class="network-label">TOPOFORGE SPARSE FABRIC</div>
+          <div class="network-label">TOPOFORGE FPGA SPARSE FABRIC</div>
           <svg viewBox="0 0 520 380" role="img" aria-label="Dense and sparse network comparison">
             <defs>
               <linearGradient id="g" x1="0" x2="1">
@@ -121,7 +134,7 @@
     </section>
 
     <section class="strip">
-      <div class="wrap strip-grid" aria-label="TopoForge evaluation proof">
+      <div class="wrap strip-grid" aria-label="TopoForge FPGA evaluation proof">
         <div class="proof-primary"><strong>38/38 automated cores</strong><span>N=2–39 synthesized successfully</span></div>
         <div><strong>N=40 reference core</strong><span>Physically validated Sparse40 build</span></div>
         <div><strong>N=2–40 available</strong><span>BALANCED evaluation profile</span></div>
@@ -138,7 +151,7 @@
         <div class="prose">
           <p>
             In repeated processing-element networks, connectivity can consume a large share of LUT,
-            routing and carry resources. TopoForge focuses on the structure of that network rather
+            routing and carry resources. TopoForge FPGA focuses on the structure of that network rather
             than treating every connection as equally necessary.
           </p>
           <p>
@@ -156,7 +169,7 @@
           <div class="eyebrow">VALIDATED REFERENCE RESULT</div>
           <h2>Same FPGA. Same PE count. Less interconnect.</h2>
           <p>
-            The 40-PE grid baseline and the TopoForge Sparse40 core were implemented with the
+            The 40-PE grid baseline and the TopoForge FPGA Sparse40 core were implemented with the
             same pipeline, clock, stimulus and device. Only the connectivity changed.
           </p>
         </div>
@@ -219,10 +232,10 @@
     <section class="section use-cases-section" id="use-cases">
       <div class="wrap">
         <div class="section-heading">
-          <div class="eyebrow">WHERE TOPOFORGE MAY HELP</div>
+          <div class="eyebrow">WHERE TOPOFORGE FPGA MAY HELP</div>
           <h2>Good candidates are structured, repeated and connection-heavy.</h2>
           <p>
-            TopoForge is aimed at FPGA designs where many similar processing elements exchange
+            TopoForge FPGA is aimed at designs where many similar processing elements exchange
             mostly local, structured or sparse information. These five areas are useful starting
             points for an evaluation.
           </p>
@@ -302,7 +315,7 @@
           <h2>A customer package, not the proprietary generator.</h2>
         </div>
         <div class="code-card">
-<pre>TF-EVAL-xxxxxx_Nxx_BALANCED/
+<pre>TopoForge_TF-EVAL-xxxxxx_Nxx_BALANCED/
 ├── src/
 │   ├── topoforge_core.ngc
 │   ├── topoforge_wrapper.vhd
@@ -310,10 +323,15 @@
 ├── example/
 │   ├── example_top.vhd
 │   └── example.ucf
-├── QUICKSTART_ISE14_7.txt
+├── docs/
+│   ├── CORE_INFO.txt
+│   ├── INTERFACE.md
+│   └── ISE14_7_QUICKSTART.md
+├── README.md
 ├── BUILD_INFO.txt
-├── CORE_INFO.txt
-└── LICENSE.txt</pre>
+├── LICENSE.txt
+├── manifest.json
+└── SHA256SUMS.txt</pre>
         </div>
       </div>
     </section>
@@ -322,7 +340,7 @@
       <div class="wrap">
         <div class="section-heading">
           <div class="eyebrow">WHAT'S NEXT</div>
-          <h2>More devices. More data points. A broader TopoForge.</h2>
+          <h2>More devices. More data points. A broader TopoForge FPGA.</h2>
           <p>
             The current Technology Preview is intentionally free and narrow so the first users can
             test the protected delivery flow on a physically validated reference platform.
@@ -336,7 +354,7 @@
             <h3>Altera / Intel programmable-logic validation</h3>
             <p>
               A small cross-vendor validation branch is planned for Altera / Intel devices.
-              The goal is to verify portability of the TopoForge fabric concept beyond the
+              The goal is to verify portability of the TopoForge FPGA fabric concept beyond the
               current Spartan-6 reference platform.
             </p>
             <div class="roadmap-meta">Cross-vendor · experimental validation</div>
@@ -370,7 +388,7 @@
             <span class="free-tag">FREE TECHNOLOGY PREVIEW</span>
             <h3>Try the validated version now.</h3>
             <p>
-              The current Spartan-6 evaluation is the easiest way to try TopoForge before the
+              The current Spartan-6 evaluation is the easiest way to try TopoForge FPGA before the
               larger commercial versions arrive.
             </p>
           </div>
@@ -427,12 +445,12 @@
         >
           <input type="hidden" name="_url" value="https://tomi546258-dev.github.io/">
           <input type="hidden" name="_next" value="https://tomi546258-dev.github.io/thanks.html">
-          <input type="hidden" name="_subject" value="New TopoForge Evaluation Request">
+          <input type="hidden" name="_subject" value="New TopoForge FPGA Evaluation Request">
           <input type="hidden" name="_template" value="table">
           <input
             type="hidden"
             name="_autoresponse"
-            value="Thank you for your TopoForge evaluation request. Your request has been received. I will review it and send your evaluation package by email within 1–2 business days. If I need any clarification, I will contact you at this email address."
+            value="Thank you for your TopoForge FPGA evaluation request. Your request has been received. I will review it and send your evaluation package by email within 1–2 business days. If I need any clarification, I will contact you at this email address."
           >
           
           <div class="form-card">
@@ -540,7 +558,7 @@
               <input
                 type="text"
                 name="Baseline topology"
-                placeholder="Leave blank for the standard TopoForge BALANCED topology"
+                placeholder="Leave blank for the standard TopoForge FPGA BALANCED profile"
               >
             </label>
 
@@ -669,7 +687,7 @@
     <div class="wrap footer-row">
       <div class="brand footer-brand">
         <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
-        <span>TopoForge</span>
+        <span class="brand-name">TopoForge <small>FPGA</small></span>
       </div>
       <div class="footer-copy">
         <span>Structure-aware FPGA interconnect optimization · Technology Preview 0.1</span>

@@ -1,12 +1,14 @@
-TOPOFORGE WEBSITE v0.8.3
+TOPOFORGE FPGA WEBSITE v0.8.4
 =======================
 
-Changes from v0.8.2
+Changes from v0.8.3
 ----------------
-- The discreet footer number now uses GoatCounter's TOTAL counter instead of
-  a path-specific counter. This preserves the total across old and new page
-  paths and avoids a missing-path dash.
-- Public product wording and the N=2–40 evaluation range are unchanged.
+- Public branding is now consistently shown as "TopoForge FPGA" in the page
+  title, search/social metadata, header, footer, form and acknowledgement page.
+- Structured Product metadata was added to help search engines distinguish the
+  FPGA product from unrelated projects with similar names.
+- Technical URLs, analytics, interface names and customer integration filenames
+  are unchanged.
 
 GoatCounter setting required
 ----------------------------
@@ -21,9 +23,10 @@ Replace/upload these files in the repository root:
   README.md
   README_SETUP.txt
   FORM_SETUP.txt
+  TopoForge_Evaluation_Request_Kit_0_1_TXT.zip
   SHA256SUMS.txt
 
-thanks.html does not need to change for this revision.
+thanks.html also changes in this revision and must be uploaded.
 
 Then wait for GitHub Pages to redeploy and reload:
   https://tomi546258-dev.github.io/
