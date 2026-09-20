@@ -1,4 +1,4 @@
-TOPOFORGE FPGA WEBSITE v0.9.0 — FORM SETUP
+TOPOFORGE FPGA WEBSITE v0.9.1 — FORM SETUP
 ====================================
 
 The online Evaluation Request form is configured to send requests to:
@@ -20,9 +20,9 @@ After activation:
   N=2 through N=40;
 - an existing customer topology description is optional for the standard
   TopoForge FPGA BALANCED core;
-- the acknowledgement says the evaluation package will be sent by email within
-  1–2 business days;
-- the protected customer ZIP is prepared manually and returned by email.
+- the acknowledgement says the request will be reviewed first;
+- accepted requests receive a private package link within 1–2 business days;
+- the protected customer ZIP is prepared manually during the Technology Preview.
 
 The post-submit acknowledgement page is:
   https://tomi546258-dev.github.io/topoforge-web/thanks.html

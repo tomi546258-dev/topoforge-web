@@ -1,14 +1,13 @@
-TOPOFORGE FPGA WEBSITE v0.9.0
+TOPOFORGE FPGA WEBSITE v0.9.1
 =======================
 
-Changes from v0.8.5
+Changes from v0.9.0
 ----------------
-- Added a clearly labelled Intel/Altera MAX II engineering-validation result.
-- Added N=2 through N=4 experimental scope, N=4 hardware BIST and 50 MHz timing
-  status without presenting Intel/Altera as a currently available product.
-- Updated the roadmap status from planned to experimentally validated.
-- The public evaluation profile remains Xilinx Spartan-6 with protected NGC
-  delivery.
+- Corrected the evaluation workflow to begin with the online request form.
+- Added technical review and acceptance before package delivery.
+- Replaced misleading download-first wording with a private package link sent
+  only for accepted requests.
+- Standardized the main calls to action around requesting an evaluation.
 
 GoatCounter setting required
 ----------------------------

@@ -20,4 +20,4 @@ Additional engineering validation:
 - physical N=4 sparse BIST validation at 50 MHz;
 - not currently part of the public evaluation offer.
 
-Website revision: v0.9.0.
+Website revision: v0.9.1.
