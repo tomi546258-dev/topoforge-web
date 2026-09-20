@@ -116,6 +116,40 @@ h3{font-size:18px;letter-spacing:-.02em;margin-bottom:7px}
 .bar-base{background:#71858d}
 .bar-sparse{background:linear-gradient(90deg,var(--accent),var(--accent2))}
 .fine-print{color:#687c83;font-size:12px;max-width:890px;margin:18px 0 0}
+.cross-validation{
+  margin-top:34px;
+  padding:28px;
+  border:1px solid #31464e;
+  border-radius:20px;
+  background:linear-gradient(135deg,rgba(142,227,255,.065),rgba(182,255,207,.025));
+}
+.cross-validation-copy{max-width:820px}
+.cross-validation-copy .eyebrow{margin-bottom:10px}
+.cross-validation-copy h3{font-size:24px;line-height:1.2;margin-bottom:10px}
+.cross-validation-copy p{margin:0;color:#91a5ac;font-size:14px}
+.cross-validation-grid{
+  display:grid;
+  grid-template-columns:repeat(4,minmax(0,1fr));
+  gap:10px;
+  margin-top:22px;
+}
+.cross-validation-grid>div{
+  padding:14px 15px;
+  border:1px solid rgba(255,255,255,.065);
+  border-radius:12px;
+  background:rgba(8,13,16,.52);
+}
+.cross-validation-grid span{
+  display:block;
+  margin-bottom:5px;
+  color:#6f858d;
+  font-size:10px;
+  font-weight:750;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.cross-validation-grid strong{font-size:13px}
+.cross-validation-note{margin:16px 0 0;color:#71868e;font-size:12px;line-height:1.55}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 .step{border-top:1px solid #31424b;padding:22px 14px 0 0}
 .step-no{font-size:12px;color:var(--accent);font-weight:850;letter-spacing:.14em}
@@ -157,6 +191,7 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
   .strip-grid{grid-template-columns:repeat(2,1fr)}
   .strip-grid>div:nth-child(2){border-right:0}
   .profile-grid{grid-template-columns:repeat(2,1fr)}
+  .cross-validation-grid{grid-template-columns:repeat(2,1fr)}
 }
 @media(max-width:620px){
   .wrap{width:min(calc(100% - 28px),var(--max))}
@@ -172,6 +207,8 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
   .cta-box .btn{margin-top:23px;width:100%}
   .footer-row{display:block}
   .footer-copy{text-align:left;margin-top:18px}
+  .cross-validation{padding:22px}
+  .cross-validation-grid{grid-template-columns:1fr}
 }
 
 
@@ -272,6 +309,10 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
     linear-gradient(180deg,rgba(182,255,207,.045),rgba(16,22,27,.96));
   border-color:#33483e;
 }
+.roadmap-card-validated{
+  background:linear-gradient(180deg,rgba(182,255,207,.055),rgba(16,22,27,.96));
+  border-color:#365044;
+}
 .roadmap-status{
   display:inline-block;
   margin-bottom:24px;
@@ -287,6 +328,11 @@ pre{margin:0;color:#b8e6ef;font:13px/1.65 ui-monospace,SFMono-Regular,Menlo,Cons
 .roadmap-card-paid .roadmap-status{
   border-color:rgba(182,255,207,.23);
   background:rgba(182,255,207,.06);
+  color:var(--accent2);
+}
+.roadmap-card-validated .roadmap-status{
+  border-color:rgba(182,255,207,.28);
+  background:rgba(182,255,207,.07);
   color:var(--accent2);
 }
 .roadmap-card h3{

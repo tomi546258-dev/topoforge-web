@@ -226,6 +226,31 @@
           8-bit PE data, 50 MHz. Current measurement is whole-board and limited by instrument
           resolution. Results are configuration-specific and are not a universal guarantee.
         </p>
+
+        <aside class="cross-validation" aria-labelledby="cross-validation-title">
+          <div class="cross-validation-copy">
+            <div class="eyebrow">ADDITIONAL ENGINEERING VALIDATION</div>
+            <h3 id="cross-validation-title">Cross-vendor portability confirmed on Intel/Altera MAX II.</h3>
+            <p>
+              A separate experimental branch was synthesized, fitted and programmed on physical
+              MAX II hardware. This test checks portability of the fabric concept; it does not add
+              an Intel/Altera product to the current public evaluation offer.
+            </p>
+          </div>
+
+          <div class="cross-validation-grid">
+            <div><span>Target device</span><strong>EPM240T100C5</strong></div>
+            <div><span>Toolchain</span><strong>Quartus Prime Lite 24.1</strong></div>
+            <div><span>Validated scope</span><strong>N=2, N=3 and N=4</strong></div>
+            <div><span>Hardware result</span><strong>N=4 sparse BIST at 50 MHz</strong></div>
+          </div>
+
+          <p class="cross-validation-note">
+            In a matched N=4 sweep, the sparse implementation fitted the 240-logic-element device,
+            while the dense reference exceeded device capacity. Setup and hold requirements were
+            fully constrained and met. Intel/Altera protected builds are not currently offered.
+          </p>
+        </aside>
       </div>
     </section>
 
@@ -349,15 +374,15 @@
         </div>
 
         <div class="roadmap-grid">
-          <article class="roadmap-card">
-            <div class="roadmap-status">IN PREPARATION</div>
-            <h3>Altera / Intel programmable-logic validation</h3>
+          <article class="roadmap-card roadmap-card-validated">
+            <div class="roadmap-status">EXPERIMENT VALIDATED</div>
+            <h3>Intel/Altera MAX II cross-vendor validation</h3>
             <p>
-              A small cross-vendor validation branch is planned for Altera / Intel devices.
-              The goal is to verify portability of the TopoForge FPGA fabric concept beyond the
-              current Spartan-6 reference platform.
+              N=2 through N=4 experimental profiles were evaluated with Quartus Prime Lite on an
+              EPM240T100C5 device. The N=4 sparse BIST build was programmed and tested on physical
+              hardware at 50 MHz.
             </p>
-            <div class="roadmap-meta">Cross-vendor · experimental validation</div>
+            <div class="roadmap-meta">Hardware-tested · not a public evaluation profile</div>
           </article>
 
           <article class="roadmap-card">
@@ -418,6 +443,8 @@
         </div>
         <p class="support-note">
           Other devices, data widths, clocks or topology profiles are experimental and require additional validation.
+          The separate MAX II N=2–4 result is engineering validation and is not currently offered
+          as a protected customer build.
         </p>
       </div>
     </section>

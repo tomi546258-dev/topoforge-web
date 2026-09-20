@@ -1,12 +1,14 @@
-TOPOFORGE FPGA WEBSITE v0.8.5
+TOPOFORGE FPGA WEBSITE v0.9.0
 =======================
 
-Changes from v0.8.4
+Changes from v0.8.5
 ----------------
-- The FormSubmit return address now points to the actual GitHub Pages project
-  path, so a successful request opens thanks.html instead of a GitHub 404 page.
-- Canonical, social, sitemap and form-source URLs now consistently use the
-  /topoforge-web/ project path.
+- Added a clearly labelled Intel/Altera MAX II engineering-validation result.
+- Added N=2 through N=4 experimental scope, N=4 hardware BIST and 50 MHz timing
+  status without presenting Intel/Altera as a currently available product.
+- Updated the roadmap status from planned to experimentally validated.
+- The public evaluation profile remains Xilinx Spartan-6 with protected NGC
+  delivery.
 
 GoatCounter setting required
 ----------------------------

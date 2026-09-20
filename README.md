@@ -12,4 +12,12 @@ Current public evaluation profile:
 - BALANCED topology profile;
 - protected NGC delivery with public integration files.
 
-Website revision: v0.8.5.
+Additional engineering validation:
+
+- Intel/Altera MAX II EPM240T100C5;
+- Quartus Prime Lite 24.1;
+- N=2 through N=4 experimental profiles;
+- physical N=4 sparse BIST validation at 50 MHz;
+- not currently part of the public evaluation offer.
+
+Website revision: v0.9.0.
