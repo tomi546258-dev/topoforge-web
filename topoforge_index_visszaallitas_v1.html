@@ -1,0 +1,751 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Choose N=2–40 and receive a protected, integration-ready TopoForge FPGA sparse-core evaluation package for Xilinx Spartan-6 and ISE 14.7.">
+  <meta property="og:title" content="TopoForge FPGA — N-Specific Sparse Cores">
+  <meta property="og:description" content="Choose N=2–40. Receive a protected NGC core, wrapper, example project and verified build information.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://tomi546258-dev.github.io/topoforge-web/">
+  <meta property="og:site_name" content="TopoForge FPGA">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="TopoForge FPGA — N-Specific Sparse Cores">
+  <meta name="twitter:description" content="Protected N-specific FPGA cores for Xilinx Spartan-6 and ISE 14.7.">
+  <link rel="canonical" href="https://tomi546258-dev.github.io/topoforge-web/">
+  <title>TopoForge FPGA — N-Specific Sparse Cores</title>
+  <link rel="stylesheet" href="styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "TopoForge FPGA",
+    "description": "N-specific protected sparse FPGA cores for structure-aware interconnect optimization.",
+    "brand": {"@type": "Brand", "name": "TopoForge FPGA"},
+    "url": "https://tomi546258-dev.github.io/topoforge-web/"
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#top" aria-label="TopoForge FPGA home">
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="brand-name">TopoForge <small>FPGA</small></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#technology">Technology</a>
+        <a href="#results">Results</a>
+        <a href="#use-cases">Use cases</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#support">Support</a>
+      </nav>
+      <a class="btn btn-small btn-outline" href="#request">Request an Evaluation</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <div class="eyebrow">N-SPECIFIC SPARSE FPGA CORE · TECHNOLOGY PREVIEW</div>
+          <h1>Choose N. Receive a protected FPGA core.</h1>
+          <p class="hero-lead">
+            Select any processing-element count from N=2 to 40. TopoForge FPGA chooses a balanced,
+            structure-aware sparse topology and delivers an integration-ready protected NGC package.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#request">Request an Evaluation</a>
+            <a class="btn btn-ghost" href="#results">See verified results</a>
+          </div>
+          <div class="hero-note">
+            <span class="dot"></span>
+            Free Technology Preview · XC6SLX9 / ISE 14.7 · Delivered within 1–2 business days
+          </div>
+        </div>
+
+        <div class="network-card" aria-label="Illustrative sparse network diagram">
+          <div class="network-label">TOPOFORGE FPGA SPARSE FABRIC</div>
+          <svg viewBox="0 0 520 380" role="img" aria-label="Dense and sparse network comparison">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#8ee3ff"/>
+                <stop offset="1" stop-color="#b6ffcf"/>
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="2.5" result="c"/>
+                <feMerge><feMergeNode in="c"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+
+            <g class="dense" opacity=".23">
+              <line x1="80" y1="70" x2="180" y2="125"/>
+              <line x1="80" y1="70" x2="260" y2="65"/>
+              <line x1="80" y1="70" x2="120" y2="235"/>
+              <line x1="180" y1="125" x2="260" y2="65"/>
+              <line x1="180" y1="125" x2="300" y2="180"/>
+              <line x1="180" y1="125" x2="120" y2="235"/>
+              <line x1="260" y1="65" x2="390" y2="110"/>
+              <line x1="260" y1="65" x2="300" y2="180"/>
+              <line x1="390" y1="110" x2="430" y2="245"/>
+              <line x1="300" y1="180" x2="430" y2="245"/>
+              <line x1="300" y1="180" x2="225" y2="300"/>
+              <line x1="120" y1="235" x2="225" y2="300"/>
+              <line x1="120" y1="235" x2="300" y2="180"/>
+              <line x1="225" y1="300" x2="430" y2="245"/>
+              <line x1="180" y1="125" x2="430" y2="245"/>
+              <line x1="80" y1="70" x2="300" y2="180"/>
+            </g>
+
+            <g class="sparse" filter="url(#glow)">
+              <line x1="80" y1="70" x2="180" y2="125"/>
+              <line x1="180" y1="125" x2="260" y2="65"/>
+              <line x1="260" y1="65" x2="390" y2="110"/>
+              <line x1="390" y1="110" x2="430" y2="245"/>
+              <line x1="430" y1="245" x2="300" y2="180"/>
+              <line x1="300" y1="180" x2="225" y2="300"/>
+              <line x1="225" y1="300" x2="120" y2="235"/>
+              <line x1="120" y1="235" x2="80" y2="70"/>
+              <line x1="180" y1="125" x2="300" y2="180"/>
+            </g>
+
+            <g class="nodes">
+              <circle cx="80" cy="70" r="11"/>
+              <circle cx="180" cy="125" r="11"/>
+              <circle cx="260" cy="65" r="11"/>
+              <circle cx="390" cy="110" r="11"/>
+              <circle cx="430" cy="245" r="11"/>
+              <circle cx="300" cy="180" r="11"/>
+              <circle cx="225" cy="300" r="11"/>
+              <circle cx="120" cy="235" r="11"/>
+            </g>
+          </svg>
+          <div class="network-caption">
+            <div><span>82</span> baseline edges</div>
+            <div class="arrow">→</div>
+            <div><span>49</span> sparse edges</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="strip">
+      <div class="wrap strip-grid" aria-label="TopoForge FPGA evaluation proof">
+        <div class="proof-primary"><strong>38/38 automated cores</strong><span>N=2–39 synthesized successfully</span></div>
+        <div><strong>N=40 reference core</strong><span>Physically validated Sparse40 build</span></div>
+        <div><strong>N=2–40 available</strong><span>BALANCED evaluation profile</span></div>
+        <div><strong>Protected IP delivery</strong><span>NGC core + public wrapper</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="technology">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">THE PROBLEM</div>
+          <h2>Interconnect can become the design.</h2>
+        </div>
+        <div class="prose">
+          <p>
+            In repeated processing-element networks, connectivity can consume a large share of LUT,
+            routing and carry resources. TopoForge FPGA focuses on the structure of that network rather
+            than treating every connection as equally necessary.
+          </p>
+          <p>
+            The current Technology Preview demonstrates a protected sparse fabric workflow on a
+            validated reference configuration. It is deliberately narrow: the goal is to prove the
+            delivery model before generalizing the optimizer.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section results-section" id="results">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">VALIDATED REFERENCE RESULT</div>
+          <h2>Same FPGA. Same PE count. Less interconnect.</h2>
+          <p>
+            The 40-PE grid baseline and the TopoForge FPGA Sparse40 core were implemented with the
+            same pipeline, clock, stimulus and device. Only the connectivity changed.
+          </p>
+        </div>
+
+        <div class="metric-grid">
+          <article class="metric-card">
+            <span class="metric-value">−35.0%</span>
+            <h3>Slice LUTs</h3>
+            <p>1760 → 1144</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">−38.0%</span>
+            <h3>Occupied slices</h3>
+            <p>697 → 432</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">−38.4%</span>
+            <h3>MUXCY</h3>
+            <p>688 → 424</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-value">~−23.1%</span>
+            <h3>Measured active board current</h3>
+            <p>0.13 A → 0.10 A</p>
+          </article>
+        </div>
+
+        <div class="benchmark">
+          <div class="bench-row">
+            <span>Interconnect edges</span>
+            <div class="bars">
+              <div class="bar bar-base" style="--w:100%"><b>82</b></div>
+              <div class="bar bar-sparse" style="--w:59.8%"><b>49</b></div>
+            </div>
+          </div>
+          <div class="bench-row">
+            <span>Slice LUTs</span>
+            <div class="bars">
+              <div class="bar bar-base" style="--w:100%"><b>1760</b></div>
+              <div class="bar bar-sparse" style="--w:65%"><b>1144</b></div>
+            </div>
+          </div>
+          <div class="bench-row">
+            <span>Occupied slices</span>
+            <div class="bars">
+              <div class="bar bar-base" style="--w:100%"><b>697</b></div>
+              <div class="bar bar-sparse" style="--w:62%"><b>432</b></div>
+            </div>
+          </div>
+        </div>
+
+        <p class="fine-print">
+          Reference setup: Xilinx Spartan-6 XC6SLX9-2-TQG144, ISE 14.7, 40 processing elements,
+          8-bit PE data, 50 MHz. Current measurement is whole-board and limited by instrument
+          resolution. Results are configuration-specific and are not a universal guarantee.
+        </p>
+
+        <aside class="cross-validation" aria-labelledby="cross-validation-title">
+          <div class="cross-validation-copy">
+            <div class="eyebrow">ADDITIONAL ENGINEERING VALIDATION</div>
+            <h3 id="cross-validation-title">Cross-vendor portability confirmed on Intel/Altera MAX II.</h3>
+            <p>
+              A separate experimental branch was synthesized, fitted and programmed on physical
+              MAX II hardware. This test checks portability of the fabric concept; it does not add
+              an Intel/Altera product to the current public evaluation offer.
+            </p>
+          </div>
+
+          <div class="cross-validation-grid">
+            <div><span>Target device</span><strong>EPM240T100C5</strong></div>
+            <div><span>Toolchain</span><strong>Quartus Prime Lite 24.1</strong></div>
+            <div><span>Validated scope</span><strong>N=2, N=3 and N=4</strong></div>
+            <div><span>Hardware result</span><strong>N=4 sparse BIST at 50 MHz</strong></div>
+          </div>
+
+          <p class="cross-validation-note">
+            In a matched N=4 sweep, the sparse implementation fitted the 240-logic-element device,
+            while the dense reference exceeded device capacity. Setup and hold requirements were
+            fully constrained and met. Intel/Altera protected builds are not currently offered.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section use-cases-section" id="use-cases">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">WHERE TOPOFORGE FPGA MAY HELP</div>
+          <h2>Good candidates are structured, repeated and connection-heavy.</h2>
+          <p>
+            TopoForge FPGA is aimed at designs where many similar processing elements exchange
+            mostly local, structured or sparse information. These five areas are useful starting
+            points for an evaluation.
+          </p>
+        </div>
+
+        <div class="use-case-grid">
+          <article class="use-case-card">
+            <span class="use-case-no">01</span>
+            <h3>Multi-sensor systems</h3>
+            <p>Sensor arrays and condition-monitoring systems with many similar channels and mostly local data exchange.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">02</span>
+            <h3>Image &amp; thermal-image processing</h3>
+            <p>Local pixel or region processing where neighboring processing elements dominate the useful communication pattern.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">03</span>
+            <h3>Industrial multi-channel measurement</h3>
+            <p>Parallel measurement and instrumentation architectures whose channels can be grouped into local processing neighborhoods.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">04</span>
+            <h3>Robotics &amp; distributed sensing</h3>
+            <p>Distributed sensing and control fabrics with repeated nodes, local interactions and selective long-range communication.</p>
+          </article>
+          <article class="use-case-card">
+            <span class="use-case-no">05</span>
+            <h3>Event-driven &amp; sparse-activity systems</h3>
+            <p>Fault detection, alarms and event-driven processing where only part of the network is active or relevant at a given time.</p>
+          </article>
+        </div>
+
+        <p class="fine-print use-case-note">
+          These are candidate application classes, not guaranteed savings. The benefit depends on the
+          actual connectivity, data path, timing constraints and FPGA implementation.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="workflow">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">EVALUATION WORKFLOW</div>
+          <h2>Simple on the customer side.</h2>
+        </div>
+
+        <div class="steps">
+          <article class="step">
+            <span class="step-no">01</span>
+            <h3>Submit an evaluation request</h3>
+            <p>Specify your FPGA target, PE count or network profile, interface requirements and evaluation goal.</p>
+          </article>
+          <article class="step">
+            <span class="step-no">02</span>
+            <h3>Technical review</h3>
+            <p>Your request is checked against the currently supported and experimental profiles.</p>
+          </article>
+          <article class="step">
+            <span class="step-no">03</span>
+            <h3>Receive your evaluation package</h3>
+            <p>If accepted, you receive a private download link containing the protected core, public wrapper, configuration files, integration example, constraints and documentation.</p>
+          </article>
+          <article class="step">
+            <span class="step-no">04</span>
+            <h3>Integrate and test</h3>
+            <p>Use the package in a clean ISE project to evaluate device fit, resource usage, timing closure and functional behavior.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section delivery-section">
+      <div class="wrap two-col">
+        <div>
+          <div class="eyebrow">WHAT YOU RECEIVE</div>
+          <h2>A customer package, not the proprietary generator.</h2>
+        </div>
+        <div class="code-card">
+<pre>TopoForge_TF-EVAL-xxxxxx_Nxx_BALANCED/
+├── src/
+│   ├── topoforge_core.ngc
+│   ├── topoforge_wrapper.vhd
+│   └── topoforge_config.vhd
+├── example/
+│   ├── example_top.vhd
+│   └── example.ucf
+├── docs/
+│   ├── CORE_INFO.txt
+│   ├── INTERFACE.md
+│   └── ISE14_7_QUICKSTART.md
+├── README.md
+├── BUILD_INFO.txt
+├── LICENSE.txt
+├── manifest.json
+└── SHA256SUMS.txt</pre>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap-section" id="roadmap">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">WHAT'S NEXT</div>
+          <h2>More devices. More data points. A broader TopoForge FPGA.</h2>
+          <p>
+            The current Technology Preview is intentionally free and narrow so the first users can
+            test the protected delivery flow on a physically validated reference platform.
+            Broader hardware support and larger processing fabrics are already planned.
+          </p>
+        </div>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card roadmap-card-validated">
+            <div class="roadmap-status">EXPERIMENT VALIDATED</div>
+            <h3>Intel/Altera MAX II cross-vendor validation</h3>
+            <p>
+              N=2 through N=4 experimental profiles were evaluated with Quartus Prime Lite on an
+              EPM240T100C5 device. The N=4 sparse BIST build was programmed and tested on physical
+              hardware at 50 MHz.
+            </p>
+            <div class="roadmap-meta">Hardware-tested · not a public evaluation profile</div>
+          </article>
+
+          <article class="roadmap-card">
+            <div class="roadmap-status">PLANNED</div>
+            <h3>Multimedia and higher-point-count processing boards</h3>
+            <p>
+              Future versions are planned for larger, richer data paths with more processing
+              points, including multimedia-oriented boards and denser sensor / signal-processing
+              workloads.
+            </p>
+            <div class="roadmap-meta">More data points · broader workloads</div>
+          </article>
+
+          <article class="roadmap-card roadmap-card-paid">
+            <div class="roadmap-status">FUTURE COMMERCIAL TIER</div>
+            <h3>Custom and larger protected builds</h3>
+            <p>
+              The current reference evaluation is free during the Technology Preview.
+              Future custom-device support, larger configurations and broader validated build
+              profiles are expected to become part of a paid offering.
+            </p>
+            <div class="roadmap-meta">Custom builds · expanded support</div>
+          </article>
+        </div>
+
+        <div class="free-preview-callout">
+          <div>
+            <span class="free-tag">FREE TECHNOLOGY PREVIEW</span>
+            <h3>Try the validated version now.</h3>
+            <p>
+              The current Spartan-6 evaluation is the easiest way to try TopoForge FPGA before the
+              larger commercial versions arrive.
+            </p>
+          </div>
+          <a class="btn btn-primary" href="#request">Request an Evaluation</a>
+        </div>
+
+        <p class="fine-print roadmap-disclaimer">
+          Roadmap items are plans, not guaranteed release commitments. Device support,
+          validation scope, pricing and availability may change as testing progresses.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="support">
+      <div class="wrap support-card">
+        <div>
+          <div class="eyebrow">TECHNOLOGY PREVIEW 0.1</div>
+          <h2>Current evaluation profile</h2>
+        </div>
+        <div class="profile-grid">
+          <div><span>Device</span><strong>Spartan-6 XC6SLX9-2-TQG144</strong></div>
+          <div><span>Toolchain</span><strong>ISE 14.7</strong></div>
+          <div><span>Available PE count</span><strong>N=2–40</strong></div>
+          <div><span>PE data width</span><strong>8 bit</strong></div>
+          <div><span>Reference clock</span><strong>50 MHz</strong></div>
+          <div><span>Public interface</span><strong>TF-IF-0.3</strong></div>
+        </div>
+        <p class="support-note">
+          Other devices, data widths, clocks or topology profiles are experimental and require additional validation.
+          The separate MAX II N=2–4 result is engineering validation and is not currently offered
+          as a protected customer build.
+        </p>
+      </div>
+    </section>
+
+    <section class="section request-section" id="request">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="eyebrow">GET AN N-SPECIFIC EVALUATION CORE</div>
+          <h2>Choose your N. Start evaluating.</h2>
+          <p>
+            Choose any N from 2 to 40 for the current BALANCED profile. After technical review,
+            accepted requests receive private access to a protected NGC core, public wrapper,
+            example project and verified build information within 1–2 business days.
+          </p>
+        </div>
+
+        <div class="contact-line">
+          Questions before submitting? Email <a href="mailto:tomi546258@gmail.com">tomi546258@gmail.com</a>
+        </div>
+
+        <form
+          class="request-form"
+          action="https://formsubmit.co/tomi546258@gmail.com"
+          method="POST"
+        >
+          <input type="hidden" name="_url" value="https://tomi546258-dev.github.io/topoforge-web/">
+          <input type="hidden" name="_next" value="https://tomi546258-dev.github.io/topoforge-web/thanks.html">
+          <input type="hidden" name="_subject" value="New TopoForge FPGA Evaluation Request">
+          <input type="hidden" name="_template" value="table">
+          <input
+            type="hidden"
+            name="_autoresponse"
+            value="Thank you for your TopoForge FPGA evaluation request. Your request has been received and will be reviewed. If accepted, I will send a private download link to your evaluation package within 1–2 business days. If I need any clarification, I will contact you at this email address."
+          >
+          
+          <div class="form-card">
+            <div class="form-section-title">
+              <span>01</span>
+              <div>
+                <h3>Contact and project</h3>
+                <p>Where should I send the review response and private package link?</p>
+              </div>
+            </div>
+
+            <div class="form-grid two">
+              <label>
+                <span>Your name *</span>
+                <input type="text" name="Name" required autocomplete="name">
+              </label>
+
+              <label>
+                <span>Your email address *</span>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="you@your-company.com"
+                >
+                <small class="field-help">
+                  Enter your own email address. The confirmation, review response and any private package link will be sent here.
+                </small>
+              </label>
+
+              <label>
+                <span>Company / organization</span>
+                <input type="text" name="Company" autocomplete="organization">
+              </label>
+
+              <label>
+                <span>Project name *</span>
+                <input type="text" name="Project name" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="form-section-title">
+              <span>02</span>
+              <div>
+                <h3>FPGA target</h3>
+                <p>The current physically validated reference profile is pre-filled.</p>
+              </div>
+            </div>
+
+            <div class="form-grid two">
+              <label>
+                <span>FPGA vendor *</span>
+                <input type="text" name="FPGA vendor" value="Xilinx" required>
+              </label>
+
+              <label>
+                <span>FPGA family *</span>
+                <input type="text" name="FPGA family" value="Spartan-6" required>
+              </label>
+
+              <label>
+                <span>Exact device *</span>
+                <input type="text" name="Exact FPGA device" value="XC6SLX9-2-TQG144" required>
+              </label>
+
+              <label>
+                <span>Toolchain / version *</span>
+                <input type="text" name="Toolchain" value="Xilinx ISE 14.7" required>
+              </label>
+
+              <label>
+                <span>Target clock (MHz) *</span>
+                <input type="number" name="Target clock MHz" value="50" min="1" step="0.1" required>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-card">
+            <div class="form-section-title">
+              <span>03</span>
+              <div>
+                <h3>Select your core</h3>
+                <p>N is the only required topology choice for the standard BALANCED evaluation core.</p>
+              </div>
+            </div>
+
+            <div class="form-grid two">
+              <label>
+                <span>Processing elements (N) *</span>
+                <input type="number" name="PE count" value="32" min="2" max="40" required>
+                <small class="field-help">Available now: any whole number from 2 through 40.</small>
+              </label>
+
+              <label>
+                <span>PE data width (bits) *</span>
+                <input type="number" name="PE data width bits" value="8" min="1" required>
+              </label>
+            </div>
+
+            <label>
+              <span>Existing baseline topology (optional)</span>
+              <input
+                type="text"
+                name="Baseline topology"
+                placeholder="Leave blank for the standard TopoForge FPGA BALANCED profile"
+              >
+            </label>
+
+            <label>
+              <span>Mandatory connections</span>
+              <textarea
+                name="Mandatory connections"
+                rows="3"
+                placeholder="Connections that must never be removed."
+              ></textarea>
+            </label>
+
+            <label>
+              <span>Optional / removable connections</span>
+              <textarea
+                name="Optional removable connections"
+                rows="3"
+                placeholder="Connections that may be considered for reduction."
+              ></textarea>
+            </label>
+
+            <label>
+              <span>Grouping or hierarchy</span>
+              <textarea
+                name="Grouping or hierarchy"
+                rows="3"
+                placeholder="Example: two 20-PE blocks, sensor groups, repeated modules..."
+              ></textarea>
+            </label>
+
+            <label>
+              <span>What does the network do? (optional)</span>
+              <textarea
+                name="Network description"
+                rows="5"
+                placeholder="A short application description helps us understand your evaluation."
+              ></textarea>
+            </label>
+          </div>
+
+          <div class="form-card">
+            <div class="form-section-title">
+              <span>04</span>
+              <div>
+                <h3>Integration</h3>
+                <p>Tell me how the protected build should connect to the rest of your design.</p>
+              </div>
+            </div>
+
+            <div class="form-grid two">
+              <label>
+                <span>Preferred interface</span>
+                <input type="text" name="Preferred interface" value="TF-IF-0.3">
+              </label>
+
+              <label>
+                <span>Reset requirements</span>
+                <input type="text" name="Reset requirements" placeholder="Example: synchronous reset">
+              </label>
+            </div>
+
+            <label>
+              <span>Required inputs</span>
+              <textarea name="Required inputs" rows="3" placeholder="clk, rst, in_valid, pe_data, threshold..."></textarea>
+            </label>
+
+            <label>
+              <span>Required outputs</span>
+              <textarea name="Required outputs" rows="3" placeholder="out_valid, active_mask, active_count..."></textarea>
+            </label>
+
+            <label>
+              <span>Clock requirements</span>
+              <textarea name="Clock requirements" rows="3"></textarea>
+            </label>
+          </div>
+
+          <div class="form-card">
+            <div class="form-section-title">
+              <span>05</span>
+              <div>
+                <h3>Evaluation goal</h3>
+                <p>Select everything you would like to evaluate.</p>
+              </div>
+            </div>
+
+            <div class="check-grid">
+              <label class="check"><input type="checkbox" name="Goal - FPGA resource reduction" value="Yes"><span>FPGA resource reduction</span></label>
+              <label class="check"><input type="checkbox" name="Goal - Routing fit improvement" value="Yes"><span>Routing / fit improvement</span></label>
+              <label class="check"><input type="checkbox" name="Goal - Timing improvement" value="Yes"><span>Timing improvement</span></label>
+              <label class="check"><input type="checkbox" name="Goal - Power switching reduction" value="Yes"><span>Power / switching reduction</span></label>
+              <label class="check"><input type="checkbox" name="Goal - Protected IP delivery" value="Yes"><span>Protected IP delivery</span></label>
+            </div>
+
+            <label>
+              <span>Additional notes</span>
+              <textarea name="Additional notes" rows="5"></textarea>
+            </label>
+
+            <div class="privacy-note">
+              Please do not submit passwords, credentials, confidential source code, or other secrets.
+              At this preview stage, only the structural information needed to evaluate the FPGA network
+              should be included.
+            </div>
+
+            <label class="check consent">
+              <input type="checkbox" name="Request confirmation" value="Confirmed" required>
+              <span>I confirm that the information above is sufficient for an evaluation request and does not contain unnecessary secrets.</span>
+            </label>
+
+            <button class="btn btn-primary btn-large submit-btn" type="submit">
+              Submit Evaluation Request
+            </button>
+
+            <p class="form-footnote">
+              After submitting, the email address entered above will receive an automatic confirmation.
+              Accepted evaluation packages are prepared manually during the Technology Preview.
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap footer-row">
+      <div class="brand footer-brand">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+        <span class="brand-name">TopoForge <small>FPGA</small></span>
+      </div>
+      <div class="footer-copy">
+        <span>Structure-aware FPGA interconnect optimization · Technology Preview 0.1</span>
+        <span class="footer-meta">
+          <a href="mailto:tomi546258@gmail.com">tomi546258@gmail.com</a>
+        </span>
+      </div>
+    </div>
+    <span id="visitor-count" class="visitor-corner" aria-label="Site visit count">—</span>
+  </footer>
+    <script>
+    (function () {
+      const target = document.getElementById('visitor-count');
+      if (!target) return;
+
+      const endpoint = 'https://topoforge.goatcounter.com/counter/TOTAL.json';
+
+      fetch(endpoint, { cache: 'no-store' })
+        .then(function (response) {
+          if (!response.ok) throw new Error('GoatCounter HTTP ' + response.status);
+          return response.json();
+        })
+        .then(function (data) {
+          target.textContent = data && data.count ? data.count : '—';
+        })
+        .catch(function () {
+          target.textContent = '—';
+        });
+    })();
+  </script>
+  <script data-goatcounter="https://topoforge.goatcounter.com/count"
+          async src="https://gc.zgo.at/count.js"></script>
+</body>
+</html>
